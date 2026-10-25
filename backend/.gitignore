@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Local media storage and cache
+app/storage/raw/*
+!app/storage/raw/.gitkeep
+app/storage/audio_segments/*
+!app/storage/audio_segments/.gitkeep
+app/storage/video_frames/*
+!app/storage/video_frames/.gitkeep
+app/storage/outputs/*
+!app/storage/outputs/.gitkeep
+app/storage/master_verification_output/
+app/storage/reels_verification/
+app/storage/live_production_test/
+app/storage/test_full_verification/
+app/storage/test_verification/
+app/storage/*.mp3
+app/storage/*.wav
+app/storage/*.mp4
+app/storage/*.json
+
+# Media binaries
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Pytest & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# macOS system files
+.DS_Store

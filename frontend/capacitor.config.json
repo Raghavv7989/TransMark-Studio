@@ -1,0 +1,16 @@
+{
+  "appId": "com.transmark.studio",
+  "appName": "TransMark Studio",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "ios": {
+    "contentInset": "always"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
