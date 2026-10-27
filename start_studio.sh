@@ -102,8 +102,8 @@ is_port_free() {
   fi
 }
 
-# Standardize Backend Port to 8000
-DESIRED_BACKEND_PORT="${BACKEND_PORT:-8000}"
+# Standardize Backend Port (defaults to 8008 to avoid conflicts with other local services)
+DESIRED_BACKEND_PORT="${BACKEND_PORT:-8008}"
 if ! is_port_free "$DESIRED_BACKEND_PORT"; then
   echo -e "  [!] Port $DESIRED_BACKEND_PORT is occupied. Clearing stale process..."
   lsof -ti tcp:"$DESIRED_BACKEND_PORT" | xargs kill -9 2>/dev/null || true
